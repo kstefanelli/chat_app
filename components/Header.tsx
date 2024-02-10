@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from './Logo';
 import DarkModeToggle from './DarkModeToggle';
+import UserButton from './UserButton';
 
 export default function Header() {
   return (
@@ -9,6 +10,7 @@ export default function Header() {
         <Logo />
         <div className="flex-1 flex items-center justify-end space-x-4">
           <DarkModeToggle />
+          <UserButton />
         </div>
       </nav>
     </header>
