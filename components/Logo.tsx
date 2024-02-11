@@ -7,13 +7,17 @@ export default function Logo() {
   return (
     <Link href="/" prefetch={false} className="overflow-hidden">
       <div className="flex items-center w-72 h-14">
-        <AspectRatio ratio={16 / 9} className="flex items-center">
+        <AspectRatio
+          ratio={16 / 9}
+          className="flex items-center justify-center pb-2 md:pb-0"
+        >
           <Image
             priority
             src={LogoImage}
             alt="logo"
             className="dark:filter dark:invert w-16 h-16"
           />
+          Chat
         </AspectRatio>
       </div>
     </Link>
