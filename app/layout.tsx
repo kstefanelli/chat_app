@@ -4,6 +4,8 @@ import './globals.css';
 import Header from '@/components/Header';
 import { ThemeProvider } from '@/components/ThemeProvider';
 
+import FirebaseAuthProvider from '@/components/FirebaseAuthProvider';
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
