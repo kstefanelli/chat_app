@@ -17,7 +17,7 @@ export default function Logo() {
             alt="logo"
             className="dark:filter dark:invert w-16 h-16"
           />
-          Chat
+          Chat App
         </AspectRatio>
       </div>
     </Link>
