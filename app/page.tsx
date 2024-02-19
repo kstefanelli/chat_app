@@ -6,10 +6,16 @@ export default function Home() {
       <div className="relative isolate pt-14 dark:bg-gray-990" />
       <div className="py-2 sm:py-20 lg:pb-4">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-4xl font-bold -tracking-tight sm:text-6xl">
+          <div className="mx-auto text-center">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
               Chat App
             </h1>
+            <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+              You speak your language, they speak their language.{' '}
+              <span className="text-indigo-600 dark:text-indigo-500">
+                Let AI handle the translation.
+              </span>
+            </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 href="/chat"

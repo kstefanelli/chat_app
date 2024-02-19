@@ -11,13 +11,13 @@ export default function Logo() {
           ratio={16 / 9}
           className="flex items-center justify-center pb-2 md:pb-0"
         >
+          Chat App
           <Image
             priority
             src={LogoImage}
             alt="logo"
             className="dark:filter dark:invert w-16 h-16"
           />
-          Chat App
         </AspectRatio>
       </div>
     </Link>
