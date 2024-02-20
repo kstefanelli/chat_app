@@ -3,8 +3,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main>
-      <div className="relative isolate pt-14 dark:bg-gray-990" />
-      <div className="py-2 sm:py-20 lg:pb-4">
+      <div className="py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
