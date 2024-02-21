@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
 import { ThemeProvider } from '@/components/ThemeProvider';
+import FirebaseAuthProvider from '@/components/FirebaseAuthProvider';
+import ClientProviders from '@/components/ClientProviders';
 
 export const metadata: Metadata = {
   title: 'Chat App',
@@ -17,16 +19,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col min-h-screen">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header />
+        <ClientProviders>
+          <FirebaseAuthProvider>
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+              <Header />
 
-          {children}
-        </ThemeProvider>
+              {children}
+            </ThemeProvider>
+          </FirebaseAuthProvider>
+        </ClientProviders>
       </body>
     </html>
   );
