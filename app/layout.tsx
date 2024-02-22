@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import FirebaseAuthProvider from '@/components/FirebaseAuthProvider';
 import ClientProviders from '@/components/ClientProviders';
+import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
   title: 'Chat App',
@@ -30,6 +31,7 @@ export default function RootLayout({
               <Header />
 
               {children}
+              <Toaster />
             </ThemeProvider>
           </FirebaseAuthProvider>
         </ClientProviders>

@@ -5,7 +5,7 @@ import UserButton from './UserButton';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/auth';
 import Link from 'next/link';
-import { MessageSquareIcon } from 'lucide-react';
+import { MessagesSquare } from 'lucide-react';
 import CreateChatButton from './CreateChatButton';
 
 async function Header() {
@@ -18,7 +18,7 @@ async function Header() {
           {session ? (
             <>
               <Link href={'/chat'} prefetch={false}>
-                <MessageSquareIcon className="text-black dark:text-white" />
+                <MessagesSquare className="text-black dark:text-white" />
               </Link>
               <CreateChatButton />
             </>
