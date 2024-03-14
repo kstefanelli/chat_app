@@ -8,7 +8,7 @@ type Props = {
 };
 
 function ChatsPage({ searchParams: { error } }: Props) {
-  return <div>{/* <ChatList /> */}</div>;
+  return <div>Chat</div>;
 }
 
 export default ChatsPage;
